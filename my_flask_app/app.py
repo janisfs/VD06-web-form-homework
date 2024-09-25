@@ -16,7 +16,8 @@ def index():
             "hobby": hobby,
             "age": age
         }
-    return render_template("index-simple.html", user_data=user_data)
+         # изменение имени страницы index.html на index-simple.html запустит форму без стилей
+    return render_template("index.html", user_data=user_data)
 
 if __name__ == "__main__":
     app.run(debug=True)
