@@ -84,6 +84,17 @@
         </div>
         {% endif %}
     </div>
+     {% if user_data %}
+      <div class="form-container">
+        <h2>Введенные данные:</h2>
+        <p><strong>Имя:</strong> {{ user_data.name }}</p>
+        <p><strong>Город:</strong> {{ user_data.city }}</p>
+        <p><strong>Хобби:</strong> {{ user_data.hobby }}</p>
+        <p><strong>Возраст:</strong> {{ user_data.age }}</p>
+      </div>
+    {% endif %}
+
+
 </body>
 </html>
 
